@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --font-size-base: 16px;
+  --font-family-base: Arial, sans-serif;
+  --lighter-accent-color: #333333;
+}
+
+
+h1 {
+  font-size: 3.5em;
+  margin-top: 24px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-base);
+  color: #fff;
+  margin: 0;
+  padding: 24px;
+  background-color: #222;
+}
+.forms-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 24px;
+  padding: 24px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-container h2 {
+  font-size: 2.85em;
+  margin-top: 0;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.form-container hr{
+  color: white;
+  width: -webkit-fill-available;
+}
+#productForm{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 18px 0px 8px;
+}
+#customerForm{
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 8px 18px 0px 8px;
+}
+.inputField {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1em;
+  width: 100%;
+}
+
+.inputField label {
+  margin-bottom: 0.5em;
+}
+
+.inputField input {
+  /*width: 100%;*/
+  padding: 0.5em;
+}
+
+.items-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1em;
+  margin-top: 1em;
+  align-self: stretch;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--lighter-accent-color);
+  border-radius: 3px;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.item h2 {
+  margin-top: 0.5em;
+  color: #fff;
+}
+
+.item p {
+  font-size: 1.2em;
+  margin: 0.5em 0;
+  color: #fff;
+}
+.form-container button{
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: auto;
+  width: 100%;
+}
+.add-to-cart-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  cursor: pointer;
+  margin-top: auto;
+}
+
+#customerTable {
+  margin-top: 1em;
+  border-collapse: collapse;
+}
+
+#customerTable th,
+#customerTable td {
+  border: 1px solid #fff;
+  padding: 0.5em 1em;
+}
